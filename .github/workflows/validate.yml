@@ -26,4 +26,4 @@ jobs:
         run: python scripts/check-links.py
 
       - name: Build docs
-        run: mkdocs build --clean
+        run: mkdocs build --strict --clean
