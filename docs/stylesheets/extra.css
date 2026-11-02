@@ -1,0 +1,14 @@
+/* Небольшие правки поверх Material */
+.md-typeset table:not([class]) {
+  font-size: 0.75rem;
+}
+.md-typeset code {
+  word-break: break-word;
+}
+.md-typeset .task-list-item {
+  list-style: none;
+}
+/* Плашки уровней в контрольных */
+.level-green { color: #2e7d32; font-weight: 700; }
+.level-yellow { color: #f9a825; font-weight: 700; }
+.level-red { color: #c62828; font-weight: 700; }

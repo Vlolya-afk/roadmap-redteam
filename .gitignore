@@ -1,0 +1,33 @@
+# Python / MkDocs
+site/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.mkdocs_cache/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Lab secrets and heavy artifacts
+*.pcapng
+*.pcap
+!assets/pcap/.gitkeep
+labs/**/secrets/
+labs/**/*.kdbx
+labs/**/*.ovpn
+labs/**/.env
+!labs/**/.env.example
+labs/**/captures/*.bin
+labs/**/build/
+*.iso
+*.vmdk
+*.qcow2
+
+# Local notes
+journal/private/
+*.local.md
