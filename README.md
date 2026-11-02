@@ -3,7 +3,7 @@
 > Личный, проверяемый на практике трек в кибербезопасность с упором на red team.
 > Каждый модуль = теория → лаборатория на своей ВМ → артефакт в портфолио → контрольная из 3 задач.
 
-[![Deploy docs](https://github.com/Vlolya-afk/redteam-roadmap/actions/workflows/deploy.yml/badge.svg)](https://github.com/Vlolya-afk/redteam-roadmap/actions/workflows/deploy.yml)
+[![Deploy docs](https://github.com/Vlolya-afk/roadmap-redteam/actions/workflows/deploy.yml/badge.svg)](https://github.com/Vlolya-afk/roadmap-redteam/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Docs: CC BY-SA 4.0](https://img.shields.io/badge/docs-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
@@ -32,8 +32,8 @@
 
 ```bash
 # 1. Клонировать
-git clone https://github.com/Vlolya-afk/redteam-roadmap.git
-cd redteam-roadmap
+git clone https://github.com/Vlolya-afk/roadmap-redteam.git
+cd roadmap-redteam
 
 # 2. Поставить зависимости сайта (Arch)
 sudo pacman -S --needed python python-pip
@@ -48,7 +48,7 @@ mkdocs serve
 mkdocs gh-deploy --force
 ```
 
-Публикация на GitHub Pages настраивается один раз: создайте репозиторий `redteam-roadmap`, включите **Settings → Pages → Source: gh-pages branch** и сделайте push в `main`. Дальше сайт обновляется автоматически через GitHub Actions. Подробнее — в [docs/how-to-use.md](docs/how-to-use.md).
+Публикация на GitHub Pages настраивается один раз: репозиторий `roadmap-redteam` уже создан, включите **Settings → Pages → Source: gh-pages branch** и сделайте push в `main`. Дальше сайт обновляется автоматически через GitHub Actions. Подробнее — в [docs/how-to-use.md](docs/how-to-use.md).
 
 ## Структура
 

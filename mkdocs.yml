@@ -1,9 +1,9 @@
 site_name: Red Team Roadmap — 0 → Senior
 site_description: Практический трек в кибербезопасность с упором на red team. 21 модуль, 94 лаборатории, контрольные.
 site_author: Vladislav
-site_url: https://Vlolya-afk.github.io/redteam-roadmap/
-repo_url: https://github.com/Vlolya-afk/redteam-roadmap
-repo_name: Vlolya-afk/redteam-roadmap
+site_url: https://Vlolya-afk.github.io/roadmap-redteam/
+repo_url: https://github.com/Vlolya-afk/roadmap-redteam
+repo_name: Vlolya-afk/roadmap-redteam
 edit_uri: edit/main/docs/
 docs_dir: docs
 copyright: >

@@ -98,6 +98,6 @@ mkdocs serve
 mkdocs gh-deploy --force
 ```
 
-В настройках репозитория: **Settings → Pages → Source: gh-pages branch**. Ссылка будет `https://Vlolya-afk.github.io/redteam-roadmap/`.
+В настройках репозитория: **Settings → Pages → Source: gh-pages branch**. Ссылка будет `https://Vlolya-afk.github.io/roadmap-redteam/`.
 
 Не публикуйте: реальные IP/домены работодателя, чужие персональные данные, дампы паролей, лицензионные ISO. Всё в writeup — из вашей лаборатории.
