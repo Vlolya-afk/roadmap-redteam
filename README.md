@@ -3,9 +3,8 @@
 > Личный, проверяемый на практике трек в кибербезопасность с упором на red team.
 > Каждый модуль = теория → лаборатория на своей ВМ → артефакт в портфолио → контрольная из 3 задач.
 
-**Основная документация трека — [`docs/index.md`](docs/index.md)** (она же [главная страница сайта](https://Vlolya-afk.github.io/roadmap-redteam/)). Этот файл — краткий обзор репозитория; полный маршрут, модули, лабы и контрольные живут в `docs/`.
+**Основная документация трека — [`docs/README.md`](docs/README.md).** Этот файл — краткий обзор репозитория; полный маршрут, модули, лабы и контрольные живут в `docs/`. Всё оформлено обычным Markdown и читается прямо на GitHub — без сборки сайта.
 
-[![Deploy docs](https://github.com/Vlolya-afk/roadmap-redteam/actions/workflows/deploy.yml/badge.svg)](https://github.com/Vlolya-afk/roadmap-redteam/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Docs: CC BY-SA 4.0](https://img.shields.io/badge/docs-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
@@ -17,7 +16,7 @@
 
 - проходить последовательно с нуля (уровень 0 — базовый Linux и сети не требуются);
 - использовать как портфолио: каждая лаба оставляет артефакт (writeup, скрипт, отчёт, детект, PoC);
-- показать работодателю: сайт на GitHub Pages + история коммитов + раздел с отчётами и контрольными.
+- показать работодателю: публичный GitHub-репозиторий + история коммитов + раздел с отчётами и контрольными.
 
 **Честно о сроках.** «Senior за 6 месяцев с нуля» не существует. Senior — это ~4–6 лет практики, самостоятельные операции, умение вести заказчика и принимать решения при неполных данных. Здесь трек разбит на этапы:
 
@@ -32,31 +31,29 @@
 
 ## Быстрый старт
 
+Ничего устанавливать не нужно: откройте [`docs/README.md`](docs/README.md) и идите по модулям. GitHub сам рендерит Markdown, таблицы, код и Mermaid-схемы.
+
+Если хотите складывать свои writeup и артефакты в репозиторий:
+
 ```bash
-# 1. Клонировать
 git clone https://github.com/Vlolya-afk/roadmap-redteam.git
 cd roadmap-redteam
-
-# 2. Поставить зависимости сайта (Arch)
-sudo pacman -S --needed python python-pip
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-
-# 3. Локальный просмотр
-mkdocs serve
-# http://127.0.0.1:8000
-
-# 4. Публикация
-mkdocs gh-deploy --force
 ```
 
-Публикация на GitHub Pages настраивается один раз: репозиторий `roadmap-redteam` уже создан, включите **Settings → Pages → Source: gh-pages branch** и сделайте push в `main`. Дальше сайт обновляется автоматически через GitHub Actions. Подробнее — в [docs/how-to-use.md](docs/how-to-use.md).
+Дальше работаете как обычно: правите `.md`-файлы в `docs/`, кладёте артефакты в `labs/` и коммитите. Проверить внутренние ссылки перед коммитом:
+
+```bash
+python scripts/check-links.py
+```
+
+Подробнее — в [docs/how-to-use.md](docs/how-to-use.md).
 
 ## Структура
 
 ```
 redteam-roadmap/
-├─ docs/                     # теория, лабы, контрольные (MkDocs)
+├─ docs/                     # теория, лабы, контрольные (Markdown)
+│  ├─ README.md              # основной README трека
 │  ├─ roadmap.md             # карта этапов и критерии senior
 │  ├─ progress.md            # чек-лист прогресса
 │  ├─ lab/                   # установка Arch, топология VMware, цели, OPSEC
@@ -65,9 +62,7 @@ redteam-roadmap/
 │  └─ capstone/              # финальная операция
 ├─ labs/                     # скрипты, compose-файлы, конфиги, стартеры
 ├─ scripts/                  # bootstrap Arch, генератор урока, проверка ссылок
-├─ assets/                   # схемы, скриншоты, pcap (крупное — в Releases)
-├─ mkdocs.yml
-└─ .github/workflows/        # автодеплой сайта
+└─ .github/workflows/        # CI: проверка внутренних ссылок
 ```
 
 ## Модули
