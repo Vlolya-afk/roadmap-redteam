@@ -3,6 +3,8 @@
 > Личный, проверяемый на практике трек в кибербезопасность с упором на red team.
 > Каждый модуль = теория → лаборатория на своей ВМ → артефакт в портфолио → контрольная из 3 задач.
 
+**Основная документация трека — [`docs/index.md`](docs/index.md)** (она же [главная страница сайта](https://Vlolya-afk.github.io/roadmap-redteam/)). Этот файл — краткий обзор репозитория; полный маршрут, модули, лабы и контрольные живут в `docs/`.
+
 [![Deploy docs](https://github.com/Vlolya-afk/roadmap-redteam/actions/workflows/deploy.yml/badge.svg)](https://github.com/Vlolya-afk/roadmap-redteam/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Docs: CC BY-SA 4.0](https://img.shields.io/badge/docs-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
